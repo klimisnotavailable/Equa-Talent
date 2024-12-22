@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <div>
         <a href=""></a>
-        <div>
+        <div className="flex gap-24 ssm:hidden">
           <Navigation></Navigation>
           <AuthNav></AuthNav>
         </div>
