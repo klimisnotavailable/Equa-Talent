@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-basic: rgba(47, 46, 46, 0.7);
+  --text-dark: rgb(0, 0, 0);
+  --text-light: rgb(255, 255, 255);
+  --accent-color: rgb(255, 121, 0);
+  --brand-color:rgb(134, 67, 255);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
 header,
 section {
   padding-right: 24px;
@@ -22,7 +37,7 @@ section {
 }
 
 .linkAccent {
-  background-color: rgb(134, 67, 255);
+  background-color: var(--brand-color);
   color: white;
 }
 
@@ -35,12 +50,21 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+  section{
+    padding-right: 32px;
+    padding-left: 32px;
+  }
   .container {
     width: 704px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  section{
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+
   header {
     padding-right: 40px;
     padding-left: 40px;
